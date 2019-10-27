@@ -1,4 +1,4 @@
-body {
+/* body {
       font: 400 15px Tahoma, sans-serif;
       line-height: 1.8;
       color: #423e3e;
@@ -10,4 +10,113 @@ h1 {
       text-transform: uppercase;
       padding: 100px 25px;
       text-align: center;     
+  } */
+
+  /*especificidad: 6 */
+h1,h2,h3,h4,h5,h6 {
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 0.4em;
+  margin: 0.4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1{
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  border-radius: 1em;
+  color: rgba(253, 246, 246, 0.781);
+  background-color: rgba(0, 0, 0, 0.904);
+}
+
+h2{
+  text-decoration-line: underline;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  color: rgb(0, 0, 0);
+  background-color: rgba(202, 193, 193, 0.445);
+}
+h3,h4,h5,h6{
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.842);
+  background-color: rgba(202, 193, 193, 0.719);
+}
+
+p{
+  font-family: serif;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+p::first-letter{
+  font-size: 1.2em;
+}
+
+aside h2{
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  border-radius: 1em;
+  color: rgba(0, 0, 0, 0.781);
+  background-color: rgba(0, 0, 0, 0.568);
+}
+
+li{
+  margin-bottom: 2em;
+}
+
+a:link, a:visited{
+  font-family: sans-serif;
+  border-radius: 2em;
+  padding: 0.6em;
   }
+  a:link{
+  color: rgba(255, 255, 255, 0.582);
+  background-color: rgba(0, 0, 0, 0.692);
+  }
+  /*especificidad: 11*/
+  a:visited{
+    color: rgba(0, 0, 0, 0.692);
+    background-color:  rgba(255, 255, 255, 0.582);
+    }
+
+    address p {
+      color: darkgray;
+    }
+
+    audio{
+      background-color:rgba(0, 0, 0, 0.103);
+      border-radius: 2em;
+    }
+
+    figcaption{
+      background-color:rgba(0, 0, 0, 0.938);
+      color: white;
+    }
+
+    ul, ol{
+      font-family: sans-serif;
+      background-color:  rgba(8, 7, 7, 0.171);
+      color: rgb(5, 0, 0);
+      border-radius: 2em;
+      text-decoration-line: underline;
+      padding : 2em;
+      text-align: center;
+    }
+
+    table{
+      font-family: serif;
+      background-color:  rgba(255, 255, 255, 0.521);
+      color: rgb(15, 6, 6);
+      padding: 2em;
+      border-radius: 2.4em;
+    }
+
+    th{
+      font-weight: bold;
+      text-decoration-line: underline;
+      background-color:  rgba(5, 3, 3, 0.521);
+      border-radius: 2em;
+    }
+    td{
+      text-align: center;
+    }
