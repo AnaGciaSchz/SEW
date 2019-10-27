@@ -53,17 +53,27 @@ p{
 figure,video,audio{
   margin:0 auto ;
   padding: 2em; 
-  height: auto;
 }
 
 figure{
   width:auto;
+  height: auto;
 } 
       
 video{
-  width:60%; 
+  width:60%;
+  height: auto; 
 } 
 
 audio{
-  width:30%; 
+  width:70%;
+}
+
+table{
+  margin:0 auto;
+  width: 76%
+}
+
+footer section h2{
+  text-align: left;
 }
