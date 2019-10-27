@@ -27,6 +27,7 @@ body {
   "footer  footer ";
 }
 
+/* especificidad: 1 */
 section{
   display:flex;
   flex-direction: row;
@@ -37,47 +38,47 @@ section{
   padding-left: 2em;
   padding-right: 2em;
 }
-
+/* especificidad: 1 */
 h1,h2,h3,h4,h5,h6 {
   text-align: center;
   width: 100%;
   height: 2em;
 }
-
+/* especificidad: 1 */
 p{
   margin-left: 0.2em;
   margin-right: 0.2em;
   width: 100%;
 }
-
+/* especificidad: 1 */
 figure,video,audio{
   margin:0 auto ;
   padding: 2em; 
 }
-
+/* especificidad: 1 */
 figure{
   width:auto;
   height: auto;
 } 
-      
+/* especificidad: 1 */    
 video{
   width:60%;
   height: auto; 
 } 
-
+/* especificidad: 1 */
 audio{
   width:70%;
 }
-
+/* especificidad: 1 */
 table{
   margin:0 auto;
   width: 76%
 }
-
+/* especificidad: 1 */
 footer section h2{
   text-align: left;
 }
-
+/* especificidad: 1 */
 li{
   padding: 0.4em;
 }

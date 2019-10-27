@@ -1,18 +1,4 @@
-/* body {
-      font: 400 15px Tahoma, sans-serif;
-      line-height: 1.8;
-      color: #423e3e;
-      background-color: #f6f6f6;
-  }
-h1 {
-      background-color:#FF5733; 
-      color: #fff;
-      text-transform: uppercase;
-      padding: 100px 25px;
-      text-align: center;     
-  } */
-
-  /*especificidad: 6 */
+  /*especificidad: 1 */
 h1,h2,h3,h4,h5,h6 {
   font-family: sans-serif;
   font-weight: bold;
@@ -21,7 +7,7 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
   text-transform: uppercase;
 }
-
+/* especificidad: 1 */
 h1{
   font-size: 2em;
   letter-spacing: 0.2em;
@@ -29,7 +15,7 @@ h1{
   color: rgba(253, 246, 246, 0.781);
   background-color: rgba(0, 0, 0, 0.904);
 }
-
+/* especificidad: 1 */
 h2{
   text-decoration-line: underline;
   font-size: 1.4em;
@@ -37,21 +23,23 @@ h2{
   color: rgb(0, 0, 0);
   background-color: rgba(202, 193, 193, 0.445);
 }
+/* especificidad: 1 */
 h3,h4,h5,h6{
   font-size: 1em;
   color: rgba(0, 0, 0, 0.842);
   background-color: rgba(202, 193, 193, 0.719);
 }
-
+/* especificidad: 1 */
 p{
   font-family: serif;
   font-size: 1.2em;
   color: rgb(0, 0, 0);
 }
+/* especificidad: 2 */
 p::first-letter{
   font-size: 1.2em;
 }
-
+/* especificidad: 1 */
 aside h2{
   font-size: 1.2em;
   letter-spacing: 0.2em;
@@ -59,40 +47,41 @@ aside h2{
   color: rgba(0, 0, 0, 0.781);
   background-color: rgba(0, 0, 0, 0.568);
 }
-
+/* especificidad: 1 */
 li{
   margin-bottom: 2em;
 }
-
+/* especificidad: 2 */
 a:link, a:visited{
   font-family: sans-serif;
   border-radius: 2em;
   padding: 0.6em;
   }
+  /* especificidad: 2 */
   a:link{
   color: rgba(255, 255, 255, 0.582);
   background-color: rgba(0, 0, 0, 0.692);
   }
-  /*especificidad: 11*/
+  /*especificidad: 2*/
   a:visited{
     color: rgba(0, 0, 0, 0.692);
     background-color:  rgba(255, 255, 255, 0.582);
     }
-
+  /* especificidad: 1 */
     address p {
       color: darkgray;
     }
-
+/* especificidad: 1 */
     audio{
       background-color:rgba(0, 0, 0, 0.103);
       border-radius: 2em;
     }
-
+/* especificidad: 1 */
     figcaption{
       background-color:rgba(0, 0, 0, 0.938);
       color: white;
     }
-
+/* especificidad: 1 */
     ul, ol{
       font-family: sans-serif;
       background-color:  rgba(8, 7, 7, 0.171);
@@ -102,7 +91,7 @@ a:link, a:visited{
       padding : 2em;
       text-align: center;
     }
-
+/* especificidad: 1 */
     table{
       font-family: serif;
       background-color:  rgba(255, 255, 255, 0.521);
@@ -110,13 +99,14 @@ a:link, a:visited{
       padding: 2em;
       border-radius: 2.4em;
     }
-
+/* especificidad: 1 */
     th{
       font-weight: bold;
       text-decoration-line: underline;
       background-color:  rgba(5, 3, 3, 0.521);
       border-radius: 2em;
     }
+    /* especificidad: 1 */
     td{
       text-align: center;
     }
